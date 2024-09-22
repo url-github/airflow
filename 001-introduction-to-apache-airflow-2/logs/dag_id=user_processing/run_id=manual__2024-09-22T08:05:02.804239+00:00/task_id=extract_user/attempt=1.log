@@ -1,0 +1,34 @@
+[2024-09-22T08:05:06.605+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T08:05:06.613+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_processing.extract_user manual__2024-09-22T08:05:02.804239+00:00 [queued]>
+[2024-09-22T08:05:06.617+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_processing.extract_user manual__2024-09-22T08:05:02.804239+00:00 [queued]>
+[2024-09-22T08:05:06.617+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-22T08:05:06.622+0000] {taskinstance.py:2888} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2024-09-22 08:05:02.804239+00:00
+[2024-09-22T08:05:06.625+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1433) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-22T08:05:06.626+0000] {standard_task_runner.py:72} INFO - Started process 1435 to run task
+[2024-09-22T08:05:06.627+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'extract_user', 'manual__2024-09-22T08:05:02.804239+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmp98edgj3q']
+[2024-09-22T08:05:06.627+0000] {standard_task_runner.py:105} INFO - Job 10: Subtask extract_user
+[2024-09-22T08:05:06.647+0000] {task_command.py:467} INFO - Running <TaskInstance: user_processing.extract_user manual__2024-09-22T08:05:02.804239+00:00 [running]> on host 0bbd6d2129ab
+[2024-09-22T08:05:06.681+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='user_processing' AIRFLOW_CTX_TASK_ID='extract_user' AIRFLOW_CTX_EXECUTION_DATE='2024-09-22T08:05:02.804239+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-22T08:05:02.804239+00:00'
+[2024-09-22T08:05:06.682+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-22T08:05:06.682+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-22T08:05:06.682+0000] {logging_mixin.py:190} INFO - Current task name:extract_user state:running start_date:2024-09-22 08:05:06.613859+00:00
+[2024-09-22T08:05:06.682+0000] {logging_mixin.py:190} INFO - Dag name:user_processing and current dag run status:running
+[2024-09-22T08:05:06.682+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T08:05:06.682+0000] {http.py:173} INFO - Calling HTTP method
+[2024-09-22T08:05:06.686+0000] {base.py:84} INFO - Retrieving connection 'user_api'
+[2024-09-22T08:05:06.689+0000] {base.py:84} INFO - Retrieving connection 'user_api'
+[2024-09-22T08:05:07.108+0000] {http.py:222} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Minttu","last":"Juntunen"},"location":{"street":{"number":6551,"name":"Hatanpään Valtatie"},"city":"Virrat","state":"Tavastia Proper","country":"Finland","postcode":27664,"coordinates":{"latitude":"-26.4451","longitude":"88.5676"},"timezone":{"offset":"+5:00","description":"Ekaterinburg, Islamabad, Karachi, Tashkent"}},"email":"minttu.juntunen@example.com","login":{"uuid":"93faa2fd-37e9-4c97-a7f6-2cdaa0d665b4","username":"happydog776","password":"vodka","salt":"B3LYJEOE","md5":"b27b2b53e64dd35269a3dc041063a379","sha1":"49783c48280d6432e543787f76923c4dd955f90c","sha256":"3269a02009ae7709569a3c5311d9b566a42c57271dc8607f67685ae1b3418d02"},"dob":{"date":"1992-04-08T14:20:52.267Z","age":32},"registered":{"date":"2015-06-05T22:39:25.856Z","age":9},"phone":"02-833-372","cell":"045-120-84-57","id":{"name":"HETU","value":"NaNNA026undefined"},"picture":{"large":"https://randomuser.me/api/portraits/women/62.jpg","medium":"https://randomuser.me/api/portraits/med/women/62.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/62.jpg"},"nat":"FI"}],"info":{"seed":"b15336d340b7ef16","results":1,"page":1,"version":"1.4"}}
+[2024-09-22T08:05:07.131+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T08:05:07.132+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extract_user, run_id=manual__2024-09-22T08:05:02.804239+00:00, execution_date=20240922T080502, start_date=20240922T080506, end_date=20240922T080507
+[2024-09-22T08:05:07.139+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-22T08:05:07.140+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-22T08:05:07.140+0000] {logging_mixin.py:190} INFO - Dag name:user_processing queued_at:2024-09-22 08:05:02.817042+00:00
+[2024-09-22T08:05:07.140+0000] {logging_mixin.py:190} INFO - Task hostname:0bbd6d2129ab operator:SimpleHttpOperator
+[2024-09-22T08:05:07.162+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T08:05:07.169+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-09-22T08:05:07.178+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T08:05:07.179+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
