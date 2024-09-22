@@ -1,0 +1,34 @@
+[2024-09-22T13:06:59.765+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T13:06:59.773+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: project.wait_for_api manual__2024-09-22T12:57:24.010523+00:00 [queued]>
+[2024-09-22T13:06:59.776+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: project.wait_for_api manual__2024-09-22T12:57:24.010523+00:00 [queued]>
+[2024-09-22T13:06:59.777+0000] {taskinstance.py:2865} INFO - Starting attempt 3 of 3
+[2024-09-22T13:06:59.782+0000] {taskinstance.py:2888} INFO - Executing <Task(HttpSensor): wait_for_api> on 2024-09-22 12:57:24.010523+00:00
+[2024-09-22T13:06:59.786+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5484) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-22T13:06:59.787+0000] {standard_task_runner.py:72} INFO - Started process 5486 to run task
+[2024-09-22T13:06:59.787+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'project', 'wait_for_api', 'manual__2024-09-22T12:57:24.010523+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/project.py', '--cfg-path', '/tmp/tmpq29i7k9j']
+[2024-09-22T13:06:59.788+0000] {standard_task_runner.py:105} INFO - Job 20: Subtask wait_for_api
+[2024-09-22T13:06:59.816+0000] {task_command.py:467} INFO - Running <TaskInstance: project.wait_for_api manual__2024-09-22T12:57:24.010523+00:00 [running]> on host 0bbd6d2129ab
+[2024-09-22T13:06:59.851+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='project' AIRFLOW_CTX_TASK_ID='wait_for_api' AIRFLOW_CTX_EXECUTION_DATE='2024-09-22T12:57:24.010523+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-22T12:57:24.010523+00:00'
+[2024-09-22T13:06:59.852+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-22T13:06:59.852+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-22T13:06:59.853+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_api state:running start_date:2024-09-22 13:06:59.773720+00:00
+[2024-09-22T13:06:59.853+0000] {logging_mixin.py:190} INFO - Dag name:project and current dag run status:running
+[2024-09-22T13:06:59.853+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T13:06:59.853+0000] {baseoperator.py:405} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-09-22T13:06:59.853+0000] {http.py:137} INFO - Poking: api/
+[2024-09-22T13:06:59.858+0000] {base.py:84} INFO - Retrieving connection 'user_api'
+[2024-09-22T13:07:00.116+0000] {base.py:336} INFO - Success criteria met. Exiting.
+[2024-09-22T13:07:00.124+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T13:07:00.125+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=project, task_id=wait_for_api, run_id=manual__2024-09-22T12:57:24.010523+00:00, execution_date=20240922T125724, start_date=20240922T130659, end_date=20240922T130700
+[2024-09-22T13:07:00.132+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-22T13:07:00.132+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-22T13:07:00.132+0000] {logging_mixin.py:190} INFO - Dag name:project queued_at:2024-09-22 13:06:58.030131+00:00
+[2024-09-22T13:07:00.132+0000] {logging_mixin.py:190} INFO - Task hostname:0bbd6d2129ab operator:HttpSensor
+[2024-09-22T13:07:00.139+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T13:07:00.146+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-09-22T13:07:00.156+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T13:07:00.157+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

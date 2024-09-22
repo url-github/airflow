@@ -1,0 +1,34 @@
+[2024-09-22T15:46:55.152+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T15:46:55.161+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: project.extract_user manual__2024-09-22T15:42:00.765595+00:00 [queued]>
+[2024-09-22T15:46:55.164+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: project.extract_user manual__2024-09-22T15:42:00.765595+00:00 [queued]>
+[2024-09-22T15:46:55.165+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-22T15:46:55.170+0000] {taskinstance.py:2888} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2024-09-22 15:42:00.765595+00:00
+[2024-09-22T15:46:55.174+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=7755) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-22T15:46:55.175+0000] {standard_task_runner.py:72} INFO - Started process 7757 to run task
+[2024-09-22T15:46:55.175+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'project', 'extract_user', 'manual__2024-09-22T15:42:00.765595+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/project.py', '--cfg-path', '/tmp/tmp85w1tdf_']
+[2024-09-22T15:46:55.176+0000] {standard_task_runner.py:105} INFO - Job 53: Subtask extract_user
+[2024-09-22T15:46:55.197+0000] {task_command.py:467} INFO - Running <TaskInstance: project.extract_user manual__2024-09-22T15:42:00.765595+00:00 [running]> on host 0bbd6d2129ab
+[2024-09-22T15:46:55.240+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='project' AIRFLOW_CTX_TASK_ID='extract_user' AIRFLOW_CTX_EXECUTION_DATE='2024-09-22T15:42:00.765595+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-22T15:42:00.765595+00:00'
+[2024-09-22T15:46:55.241+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-22T15:46:55.242+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-22T15:46:55.242+0000] {logging_mixin.py:190} INFO - Current task name:extract_user state:running start_date:2024-09-22 15:46:55.161314+00:00
+[2024-09-22T15:46:55.242+0000] {logging_mixin.py:190} INFO - Dag name:project and current dag run status:running
+[2024-09-22T15:46:55.243+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T15:46:55.243+0000] {http.py:173} INFO - Calling HTTP method
+[2024-09-22T15:46:55.252+0000] {base.py:84} INFO - Retrieving connection 'user_api'
+[2024-09-22T15:46:55.259+0000] {base.py:84} INFO - Retrieving connection 'user_api'
+[2024-09-22T15:46:55.473+0000] {http.py:222} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Jared","last":"Allen"},"location":{"street":{"number":6825,"name":"The Avenue"},"city":"Brighton and Hove","state":"Durham","country":"United Kingdom","postcode":"J4Y 0TQ","coordinates":{"latitude":"-8.3665","longitude":"-146.5686"},"timezone":{"offset":"-11:00","description":"Midway Island, Samoa"}},"email":"jared.allen@example.com","login":{"uuid":"700ad15a-6f3a-4522-9c99-135c0fb6b60c","username":"organicmeercat161","password":"scheisse","salt":"z7pNwiiM","md5":"a40c31132b02bc7bb9a8a16a26c8d44a","sha1":"169f4ae55307402637425f2f3a6cd26e5236152d","sha256":"3c3ba7669dbec3749300e0023aadab3c85d7bcbebbe019861060e864fd34e321"},"dob":{"date":"1957-12-29T01:15:19.991Z","age":66},"registered":{"date":"2009-01-16T17:24:59.448Z","age":15},"phone":"017684 02793","cell":"07590 842020","id":{"name":"NINO","value":"LP 07 15 38 C"},"picture":{"large":"https://randomuser.me/api/portraits/men/76.jpg","medium":"https://randomuser.me/api/portraits/med/men/76.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/76.jpg"},"nat":"GB"}],"info":{"seed":"9c3009e9254f8253","results":1,"page":1,"version":"1.4"}}
+[2024-09-22T15:46:55.492+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T15:46:55.493+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=project, task_id=extract_user, run_id=manual__2024-09-22T15:42:00.765595+00:00, execution_date=20240922T154200, start_date=20240922T154655, end_date=20240922T154655
+[2024-09-22T15:46:55.499+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-22T15:46:55.499+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-22T15:46:55.500+0000] {logging_mixin.py:190} INFO - Dag name:project queued_at:2024-09-22 15:46:52.176191+00:00
+[2024-09-22T15:46:55.500+0000] {logging_mixin.py:190} INFO - Task hostname:0bbd6d2129ab operator:SimpleHttpOperator
+[2024-09-22T15:46:55.526+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T15:46:55.532+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-09-22T15:46:55.539+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T15:46:55.541+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

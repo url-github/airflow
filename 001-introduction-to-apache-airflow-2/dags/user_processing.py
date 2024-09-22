@@ -1,12 +1,13 @@
-from airflow.decorators import dag
+from airflow import DAG
+from datetime import datetime
+from pandas import json_normalize
+import json
+
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
-from datetime import datetime
-import json
-from pandas import json_normalize
 
 def _process_user(ti):
     user = ti.xcom_pull(task_ids="extract_user")
@@ -28,25 +29,28 @@ def _store_user():
         filename='/tmp/processed_user.csv'
 	)
 
-@dag(schedule='@daily',
-     start_date=datetime(2024, 1, 1),
-     catchup=False,
-     tags=['udemy'])
 
-def user_processing():
+with DAG(
+    dag_id="user_processing",
+    start_date=datetime(2023, 1, 1),
+    schedule_interval="@daily",
+    catchup=False,
+	tags=['udemy']
+) as dag:
 
     create_table = PostgresOperator(
         task_id='create_table',
         postgres_conn_id='postgres',
-        sql='''CREATE TABLE IF NOT EXISTS users (
+        sql='''
+            CREATE TABLE IF NOT EXISTS users (
                 firstname TEXT NOT NULL,
                 lastname TEXT NOT NULL,
                 country TEXT NOT NULL,
                 username TEXT NOT NULL,
                 password TEXT NOT NULL,
                 email TEXT NOT NULL
-            )'''
-    	)
+            );'''
+        )
 
     is_api_available = HttpSensor(
         task_id='is_api_available',
@@ -66,6 +70,7 @@ def user_processing():
     process_user = PythonOperator(
         task_id='process_user',
         python_callable=_process_user
+
 		)
 
     store_user = PythonOperator(
@@ -73,6 +78,5 @@ def user_processing():
         python_callable=_store_user
 	)
 
-    create_table >> is_api_available >> extract_user >> process_user >> store_user
 
-user_processing()
+    create_table >> is_api_available >> extract_user >> process_user >> store_user

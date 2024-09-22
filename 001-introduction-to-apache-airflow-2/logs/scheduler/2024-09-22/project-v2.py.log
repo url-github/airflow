@@ -1,0 +1,498 @@
+[2024-09-22T17:02:52.853+0000] {processor.py:186} INFO - Started process (PID=81796) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:02:52.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:02:52.855+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.855+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:02:52.870+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:02:52.935+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.934+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:get_users
+[2024-09-22T17:02:52.938+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.938+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:get_users
+[2024-09-22T17:02:52.940+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.940+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:get_users
+[2024-09-22T17:02:52.943+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.942+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:get_users
+[2024-09-22T17:02:52.944+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.944+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:get_users
+[2024-09-22T17:02:52.946+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.946+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:get_users
+[2024-09-22T17:02:52.948+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.948+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:get_users
+[2024-09-22T17:02:52.948+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.948+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:02:52.953+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.953+0000] {dag.py:3252} INFO - Creating ORM DAG for get_users
+[2024-09-22T17:02:52.958+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:02:52.958+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:02:52.966+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.118 seconds
+[2024-09-22T17:03:23.624+0000] {processor.py:186} INFO - Started process (PID=81863) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:03:23.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:03:23.628+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:03:23.628+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:03:23.653+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:03:23.680+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:03:23.680+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:03:23.698+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:03:23.698+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:03:23.711+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.096 seconds
+[2024-09-22T17:03:54.120+0000] {processor.py:186} INFO - Started process (PID=81930) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:03:54.121+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:03:54.123+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:03:54.122+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:03:54.144+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:03:54.170+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:03:54.170+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:03:54.186+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:03:54.185+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:03:54.196+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.084 seconds
+[2024-09-22T17:04:24.724+0000] {processor.py:186} INFO - Started process (PID=81997) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:04:24.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:04:24.728+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:04:24.728+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:04:24.752+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:04:24.780+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:04:24.780+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:04:24.799+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:04:24.799+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:04:24.807+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.093 seconds
+[2024-09-22T17:04:54.885+0000] {processor.py:186} INFO - Started process (PID=82064) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:04:54.887+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:04:54.889+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:04:54.888+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:04:54.908+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:04:54.934+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:04:54.934+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:04:54.951+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:04:54.951+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:04:54.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.085 seconds
+[2024-09-22T17:05:25.814+0000] {processor.py:186} INFO - Started process (PID=82131) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:05:25.816+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:05:25.818+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:05:25.818+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:05:25.835+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:05:25.858+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:05:25.858+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:05:25.877+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:05:25.876+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:05:25.888+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.081 seconds
+[2024-09-22T17:05:56.639+0000] {processor.py:186} INFO - Started process (PID=82198) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:05:56.641+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:05:56.642+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:05:56.642+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:05:56.666+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:05:56.691+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:05:56.691+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:05:56.707+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:05:56.707+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:05:56.719+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.088 seconds
+[2024-09-22T17:06:27.405+0000] {processor.py:186} INFO - Started process (PID=82265) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:06:27.406+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:06:27.408+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:06:27.407+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:06:27.428+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:06:27.454+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:06:27.453+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:06:27.472+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:06:27.472+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:06:27.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.087 seconds
+[2024-09-22T17:06:58.242+0000] {processor.py:186} INFO - Started process (PID=82332) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:06:58.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:06:58.244+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:06:58.244+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:06:58.258+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:06:58.285+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:06:58.284+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:06:58.300+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:06:58.300+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:06:58.313+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.077 seconds
+[2024-09-22T17:07:29.068+0000] {processor.py:186} INFO - Started process (PID=82399) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:07:29.069+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:07:29.070+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:07:29.070+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:07:29.086+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:07:29.108+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:07:29.108+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:07:29.126+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:07:29.125+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:07:29.139+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.076 seconds
+[2024-09-22T17:07:59.169+0000] {processor.py:186} INFO - Started process (PID=82466) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:07:59.170+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:07:59.172+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:07:59.171+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:07:59.193+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:07:59.221+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:07:59.221+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:07:59.238+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:07:59.238+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:07:59.250+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.089 seconds
+[2024-09-22T17:08:29.340+0000] {processor.py:186} INFO - Started process (PID=82534) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:08:29.341+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:08:29.341+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:08:29.341+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:08:29.349+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:08:29.363+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:08:29.363+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:08:29.374+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:08:29.374+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:08:29.382+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.045 seconds
+[2024-09-22T17:09:00.198+0000] {processor.py:186} INFO - Started process (PID=82600) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:09:00.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:09:00.200+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:09:00.200+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:09:00.221+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:09:00.251+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:09:00.251+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:09:00.269+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:09:00.269+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:09:00.279+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.089 seconds
+[2024-09-22T17:09:30.407+0000] {processor.py:186} INFO - Started process (PID=82667) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:09:30.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:09:30.409+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:09:30.409+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:09:30.423+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:09:30.446+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:09:30.446+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:09:30.461+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:09:30.461+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:09:30.473+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.073 seconds
+[2024-09-22T17:10:01.223+0000] {processor.py:186} INFO - Started process (PID=82734) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:10:01.224+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:10:01.226+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:10:01.226+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:10:01.249+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:10:01.273+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:10:01.273+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:10:01.289+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:10:01.289+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:10:01.298+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.083 seconds
+[2024-09-22T17:10:32.253+0000] {processor.py:186} INFO - Started process (PID=82801) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:10:32.255+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:10:32.257+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:10:32.257+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:10:32.279+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:10:32.308+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:10:32.307+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:10:32.341+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:10:32.341+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:10:32.363+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.119 seconds
+[2024-09-22T17:11:02.644+0000] {processor.py:186} INFO - Started process (PID=82868) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:11:02.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:11:02.647+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:11:02.646+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:11:02.664+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:11:02.695+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:11:02.695+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:11:02.719+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:11:02.719+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:11:02.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.098 seconds
+[2024-09-22T17:11:33.084+0000] {processor.py:186} INFO - Started process (PID=82935) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:11:33.084+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:11:33.085+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:11:33.085+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:11:33.097+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:11:33.119+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:11:33.119+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:11:33.136+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:11:33.135+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:11:33.146+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:12:03.386+0000] {processor.py:186} INFO - Started process (PID=83002) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:12:03.388+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:12:03.390+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:12:03.389+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:12:03.410+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:12:03.433+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:12:03.433+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:12:03.596+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:12:03.596+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:12:03.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.228 seconds
+[2024-09-22T17:12:33.698+0000] {processor.py:186} INFO - Started process (PID=83070) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:12:33.699+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:12:33.700+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:12:33.699+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:12:33.708+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:12:33.724+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:12:33.724+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:12:33.880+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:12:33.880+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:12:33.888+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.194 seconds
+[2024-09-22T17:13:04.735+0000] {processor.py:186} INFO - Started process (PID=83137) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:13:04.736+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:13:04.737+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:13:04.736+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:13:04.747+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:13:04.765+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:13:04.764+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:13:04.905+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:13:04.905+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:13:04.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.182 seconds
+[2024-09-22T17:13:35.634+0000] {processor.py:186} INFO - Started process (PID=83204) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:13:35.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:13:35.635+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:13:35.635+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:13:35.644+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:13:35.659+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:13:35.659+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:13:35.774+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:13:35.774+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:13:35.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.155 seconds
+[2024-09-22T17:14:05.842+0000] {processor.py:186} INFO - Started process (PID=83270) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:14:05.843+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:14:05.844+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:14:05.844+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:14:05.852+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:14:05.867+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:14:05.867+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:14:05.879+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:14:05.879+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:14:05.889+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.050 seconds
+[2024-09-22T17:14:36.372+0000] {processor.py:186} INFO - Started process (PID=83337) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:14:36.373+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:14:36.374+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:14:36.374+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:14:36.386+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:14:36.411+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:14:36.410+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:14:36.426+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:14:36.425+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:14:36.435+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.067 seconds
+[2024-09-22T17:15:06.962+0000] {processor.py:186} INFO - Started process (PID=83404) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:15:06.962+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:15:06.963+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:15:06.963+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:15:06.977+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:15:07.000+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:15:07.000+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:15:07.016+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:15:07.016+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:15:07.025+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:15:37.481+0000] {processor.py:186} INFO - Started process (PID=83471) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:15:37.481+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:15:37.482+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:15:37.482+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:15:37.495+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:15:37.516+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:15:37.516+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:15:37.531+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:15:37.531+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:15:37.540+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.065 seconds
+[2024-09-22T17:16:07.953+0000] {processor.py:186} INFO - Started process (PID=83538) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:16:07.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:16:07.955+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:16:07.955+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:16:07.967+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:16:07.989+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:16:07.989+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:16:08.004+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:16:08.004+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:16:08.014+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.067 seconds
+[2024-09-22T17:16:38.564+0000] {processor.py:186} INFO - Started process (PID=83604) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:16:38.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:16:38.566+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:16:38.566+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:16:38.580+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:16:38.604+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:16:38.604+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:16:38.620+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:16:38.620+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:16:38.630+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.071 seconds
+[2024-09-22T17:17:09.304+0000] {processor.py:186} INFO - Started process (PID=83671) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:17:09.305+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:17:09.306+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:17:09.306+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:17:09.320+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:17:09.343+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:17:09.343+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:17:09.359+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:17:09.358+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:17:09.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.070 seconds
+[2024-09-22T17:17:40.003+0000] {processor.py:186} INFO - Started process (PID=83738) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:17:40.004+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:17:40.006+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:17:40.005+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:17:40.020+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:17:40.042+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:17:40.042+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:17:40.059+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:17:40.058+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:17:40.068+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.072 seconds
+[2024-09-22T17:18:10.785+0000] {processor.py:186} INFO - Started process (PID=83805) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:18:10.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:18:10.787+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:18:10.787+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:18:10.803+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:18:10.828+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:18:10.828+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:18:10.846+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:18:10.846+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:18:10.856+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.077 seconds
+[2024-09-22T17:18:41.317+0000] {processor.py:186} INFO - Started process (PID=83872) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:18:41.318+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:18:41.319+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:18:41.319+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:18:41.332+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:18:41.358+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:18:41.358+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:18:41.372+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:18:41.372+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:18:41.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.069 seconds
+[2024-09-22T17:19:12.036+0000] {processor.py:186} INFO - Started process (PID=83939) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:19:12.037+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:19:12.038+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:19:12.038+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:19:12.051+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:19:12.074+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:19:12.073+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:19:12.090+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:19:12.090+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:19:12.104+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.073 seconds
+[2024-09-22T17:19:42.705+0000] {processor.py:186} INFO - Started process (PID=84006) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:19:42.705+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:19:42.706+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:19:42.706+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:19:42.718+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:19:42.742+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:19:42.742+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:19:42.756+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:19:42.756+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:19:42.764+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.064 seconds
+[2024-09-22T17:20:13.320+0000] {processor.py:186} INFO - Started process (PID=84073) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:20:13.321+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:20:13.322+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:20:13.322+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:20:13.334+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:20:13.357+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:20:13.356+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:20:13.371+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:20:13.371+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:20:13.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:20:43.914+0000] {processor.py:186} INFO - Started process (PID=84140) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:20:43.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:20:43.916+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:20:43.916+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:20:43.930+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:20:43.953+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:20:43.953+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:20:43.969+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:20:43.969+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:20:43.981+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.072 seconds
+[2024-09-22T17:21:14.699+0000] {processor.py:186} INFO - Started process (PID=84207) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:21:14.701+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:21:14.703+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:21:14.702+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:21:14.716+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:21:14.741+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:21:14.740+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:21:14.758+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:21:14.758+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:21:14.770+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.076 seconds
+[2024-09-22T17:21:45.517+0000] {processor.py:186} INFO - Started process (PID=84274) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:21:45.518+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:21:45.519+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:21:45.518+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:21:45.535+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:21:45.557+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:21:45.556+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:21:45.572+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:21:45.572+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:21:45.584+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.074 seconds
+[2024-09-22T17:22:16.338+0000] {processor.py:186} INFO - Started process (PID=84341) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:22:16.339+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:22:16.340+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:22:16.339+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:22:16.351+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:22:16.378+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:22:16.378+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:22:16.393+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:22:16.392+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:22:16.402+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.069 seconds
+[2024-09-22T17:22:46.828+0000] {processor.py:186} INFO - Started process (PID=84408) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:22:46.829+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:22:46.830+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:22:46.830+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:22:46.842+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:22:46.862+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:22:46.862+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:22:46.875+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:22:46.875+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:22:46.883+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.060 seconds
+[2024-09-22T17:23:17.601+0000] {processor.py:186} INFO - Started process (PID=84475) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:23:17.602+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:23:17.603+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:23:17.603+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:23:17.615+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:23:17.639+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:23:17.639+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:23:17.653+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:23:17.653+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:23:17.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:23:48.177+0000] {processor.py:186} INFO - Started process (PID=84542) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:23:48.178+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:23:48.179+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:23:48.179+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:23:48.191+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:23:48.215+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:23:48.214+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:23:48.229+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:23:48.229+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:23:48.238+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:24:18.812+0000] {processor.py:186} INFO - Started process (PID=84609) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:24:18.812+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:24:18.813+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:24:18.813+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:24:18.826+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:24:18.851+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:24:18.850+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:24:18.866+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:24:18.866+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:24:18.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.069 seconds
+[2024-09-22T17:24:49.496+0000] {processor.py:186} INFO - Started process (PID=84676) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:24:49.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:24:49.498+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:24:49.498+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:24:49.510+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:24:49.533+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:24:49.533+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:24:49.548+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:24:49.547+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:24:49.563+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.072 seconds
+[2024-09-22T17:25:20.053+0000] {processor.py:186} INFO - Started process (PID=84743) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:25:20.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:25:20.055+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:25:20.054+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:25:20.067+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:25:20.090+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:25:20.090+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:25:20.105+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:25:20.105+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:25:20.114+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:25:50.661+0000] {processor.py:186} INFO - Started process (PID=84810) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:25:50.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:25:50.664+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:25:50.663+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:25:50.677+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:25:50.701+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:25:50.701+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:25:50.715+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:25:50.715+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:25:50.724+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.070 seconds
+[2024-09-22T17:26:21.362+0000] {processor.py:186} INFO - Started process (PID=84877) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:26:21.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:26:21.364+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:26:21.364+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:26:21.376+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:26:21.399+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:26:21.399+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:26:21.416+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:26:21.416+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:26:21.425+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:26:51.976+0000] {processor.py:186} INFO - Started process (PID=84944) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:26:51.977+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:26:51.978+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:26:51.978+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:26:51.991+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:26:52.011+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:26:52.011+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:26:52.026+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:26:52.026+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:26:52.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.064 seconds
+[2024-09-22T17:27:22.632+0000] {processor.py:186} INFO - Started process (PID=85011) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:27:22.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:27:22.634+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:27:22.634+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:27:22.646+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:27:22.670+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:27:22.670+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:27:22.685+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:27:22.685+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:27:22.695+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:27:53.264+0000] {processor.py:186} INFO - Started process (PID=85078) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:27:53.265+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:27:53.266+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:27:53.266+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:27:53.278+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:27:53.303+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:27:53.303+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:27:53.317+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:27:53.317+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:27:53.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:28:23.929+0000] {processor.py:186} INFO - Started process (PID=85145) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:28:23.929+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:28:23.930+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:28:23.930+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:28:23.940+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:28:23.960+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:28:23.959+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:28:23.975+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:28:23.975+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:28:23.986+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.062 seconds
+[2024-09-22T17:28:54.558+0000] {processor.py:186} INFO - Started process (PID=85212) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:28:54.558+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:28:54.559+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:28:54.559+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:28:54.567+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:28:54.585+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:28:54.585+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:28:54.601+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:28:54.601+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:28:54.616+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.062 seconds
+[2024-09-22T17:29:25.138+0000] {processor.py:186} INFO - Started process (PID=85279) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:29:25.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:29:25.142+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:29:25.142+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:29:25.160+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:29:25.180+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:29:25.180+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:29:25.193+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:29:25.193+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:29:25.201+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.067 seconds
+[2024-09-22T17:29:55.727+0000] {processor.py:186} INFO - Started process (PID=85352) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:29:55.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:29:55.729+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:29:55.729+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:29:55.741+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:29:55.767+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:29:55.767+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:29:55.781+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:29:55.781+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:29:55.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:30:26.411+0000] {processor.py:186} INFO - Started process (PID=85419) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:30:26.412+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:30:26.413+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:30:26.413+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:30:26.426+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:30:26.448+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:30:26.448+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:30:26.464+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:30:26.464+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:30:26.473+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:30:57.033+0000] {processor.py:186} INFO - Started process (PID=85486) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:30:57.034+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:30:57.035+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:30:57.035+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:30:57.048+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:30:57.072+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:30:57.072+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:30:57.088+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:30:57.088+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:30:57.097+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.070 seconds
+[2024-09-22T17:31:27.683+0000] {processor.py:186} INFO - Started process (PID=85552) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:31:27.684+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:31:27.685+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:31:27.685+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:31:27.697+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:31:27.721+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:31:27.721+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:31:27.735+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:31:27.735+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:31:27.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:31:58.266+0000] {processor.py:186} INFO - Started process (PID=85619) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:31:58.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:31:58.268+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:31:58.267+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:31:58.280+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:31:58.303+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:31:58.303+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:31:58.318+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:31:58.318+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:31:58.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.066 seconds
+[2024-09-22T17:32:28.837+0000] {processor.py:186} INFO - Started process (PID=85686) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:32:28.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:32:28.839+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:32:28.839+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:32:28.853+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:32:28.877+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:32:28.877+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:32:28.892+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:32:28.892+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:32:28.901+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.069 seconds
+[2024-09-22T17:32:59.506+0000] {processor.py:186} INFO - Started process (PID=85753) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:32:59.507+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:32:59.508+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:32:59.508+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:32:59.525+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:32:59.550+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:32:59.550+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:32:59.568+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:32:59.568+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:32:59.580+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.081 seconds
+[2024-09-22T17:33:30.112+0000] {processor.py:186} INFO - Started process (PID=85820) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:33:30.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:33:30.114+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:33:30.114+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:33:30.128+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:33:30.151+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:33:30.151+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:33:30.168+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:33:30.168+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:33:30.177+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.069 seconds
+[2024-09-22T17:34:00.578+0000] {processor.py:186} INFO - Started process (PID=85887) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:34:00.579+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:34:00.580+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:34:00.580+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:34:00.593+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:34:00.615+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:34:00.615+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:34:00.630+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:34:00.630+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:34:00.639+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:34:31.227+0000] {processor.py:186} INFO - Started process (PID=85954) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:34:31.228+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:34:31.229+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:34:31.229+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:34:31.243+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:34:31.267+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:34:31.266+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:34:31.283+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:34:31.283+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:34:31.292+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.070 seconds
+[2024-09-22T17:35:01.806+0000] {processor.py:186} INFO - Started process (PID=86021) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:35:01.807+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:35:01.808+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:35:01.808+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:35:01.821+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:35:01.840+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:35:01.840+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:35:01.854+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:35:01.854+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:35:01.862+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.061 seconds
+[2024-09-22T17:35:32.413+0000] {processor.py:186} INFO - Started process (PID=86088) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:35:32.414+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:35:32.415+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:35:32.414+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:35:32.427+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:35:32.456+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:35:32.456+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:35:32.470+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:35:32.470+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:35:32.479+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.071 seconds
+[2024-09-22T17:36:02.972+0000] {processor.py:186} INFO - Started process (PID=86155) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:36:02.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:36:02.974+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:36:02.974+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:36:02.987+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:36:03.011+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:36:03.011+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:36:03.025+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:36:03.025+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:36:03.034+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.068 seconds
+[2024-09-22T17:36:33.067+0000] {processor.py:186} INFO - Started process (PID=86222) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:36:33.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:36:33.069+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:36:33.069+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:36:33.082+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:36:33.104+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:36:33.104+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:36:33.119+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:36:33.119+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:36:33.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.067 seconds
+[2024-09-22T17:37:03.817+0000] {processor.py:186} INFO - Started process (PID=86289) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:37:03.818+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:37:03.820+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:37:03.819+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:37:03.834+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:37:03.860+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:37:03.860+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:37:03.876+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:37:03.876+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:37:03.885+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.075 seconds
+[2024-09-22T17:37:34.714+0000] {processor.py:186} INFO - Started process (PID=86356) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:37:34.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:37:34.716+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:37:34.716+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:37:34.728+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:37:34.751+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:37:34.751+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:37:34.767+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:37:34.767+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:37:34.775+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.067 seconds
+[2024-09-22T17:38:05.625+0000] {processor.py:186} INFO - Started process (PID=86423) to work on /opt/airflow/dags/project-v2.py
+[2024-09-22T17:38:05.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project-v2.py for tasks to queue
+[2024-09-22T17:38:05.627+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:38:05.627+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:38:05.636+0000] {processor.py:925} INFO - DAG(s) 'get_users' retrieved from /opt/airflow/dags/project-v2.py
+[2024-09-22T17:38:05.653+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:38:05.653+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-22T17:38:05.666+0000] {logging_mixin.py:190} INFO - [2024-09-22T17:38:05.666+0000] {dag.py:4156} INFO - Setting next_dagrun for get_users to 2023-08-28 20:00:00+00:00, run_after=2023-08-28 20:30:00+00:00
+[2024-09-22T17:38:05.675+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project-v2.py took 0.054 seconds
