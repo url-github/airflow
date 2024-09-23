@@ -1,0 +1,31 @@
+[2024-09-23T14:24:05.816+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-23T14:24:05.824+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 008-simple-extract-load-bq.check_for_table manual__2024-09-23T11:32:25.296554+00:00 [queued]>
+[2024-09-23T14:24:05.827+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 008-simple-extract-load-bq.check_for_table manual__2024-09-23T11:32:25.296554+00:00 [queued]>
+[2024-09-23T14:24:05.827+0000] {taskinstance.py:2865} INFO - Starting attempt 8 of 8
+[2024-09-23T14:24:05.832+0000] {taskinstance.py:2888} INFO - Executing <Task(BigQueryTableExistenceSensor): check_for_table> on 2024-09-23 11:32:25.296554+00:00
+[2024-09-23T14:24:05.837+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1871) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-23T14:24:05.838+0000] {standard_task_runner.py:72} INFO - Started process 1873 to run task
+[2024-09-23T14:24:05.839+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '008-simple-extract-load-bq', 'check_for_table', 'manual__2024-09-23T11:32:25.296554+00:00', '--job-id', '118', '--raw', '--subdir', 'DAGS_FOLDER/008-simple-extract-load-bq.py', '--cfg-path', '/tmp/tmprorfna23']
+[2024-09-23T14:24:05.839+0000] {standard_task_runner.py:105} INFO - Job 118: Subtask check_for_table
+[2024-09-23T14:24:05.864+0000] {task_command.py:467} INFO - Running <TaskInstance: 008-simple-extract-load-bq.check_for_table manual__2024-09-23T11:32:25.296554+00:00 [running]> on host 49bf9bae52f3
+[2024-09-23T14:24:05.912+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='008-simple-extract-load-bq' AIRFLOW_CTX_TASK_ID='check_for_table' AIRFLOW_CTX_EXECUTION_DATE='2024-09-23T11:32:25.296554+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-23T11:32:25.296554+00:00'
+[2024-09-23T14:24:05.913+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-23T14:24:05.913+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-23T14:24:05.913+0000] {logging_mixin.py:190} INFO - Current task name:check_for_table state:running start_date:2024-09-23 14:24:05.824376+00:00
+[2024-09-23T14:24:05.913+0000] {logging_mixin.py:190} INFO - Dag name:008-simple-extract-load-bq and current dag run status:running
+[2024-09-23T14:24:05.913+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-23T14:24:05.913+0000] {baseoperator.py:405} WARNING - BigQueryTableExistenceSensor.execute cannot be called outside TaskInstance!
+[2024-09-23T14:24:05.914+0000] {bigquery.py:106} INFO - Sensor checks existence of table: third-essence-345723:astronomer.forestfires
+[2024-09-23T14:24:05.922+0000] {base.py:84} INFO - Retrieving connection 'bigquery'
+[2024-09-23T14:24:06.474+0000] {base.py:336} INFO - Success criteria met. Exiting.
+[2024-09-23T14:24:06.487+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-23T14:24:06.487+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=008-simple-extract-load-bq, task_id=check_for_table, run_id=manual__2024-09-23T11:32:25.296554+00:00, execution_date=20240923T113225, start_date=20240923T142405, end_date=20240923T142406
+[2024-09-23T14:24:06.495+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-23T14:24:06.496+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-23T14:24:06.496+0000] {logging_mixin.py:190} INFO - Dag name:008-simple-extract-load-bq queued_at:2024-09-23 14:23:59.252854+00:00
+[2024-09-23T14:24:06.496+0000] {logging_mixin.py:190} INFO - Task hostname:49bf9bae52f3 operator:BigQueryTableExistenceSensor
+[2024-09-23T14:24:06.543+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-23T14:24:06.571+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-23T14:24:06.572+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

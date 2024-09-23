@@ -1,0 +1,30 @@
+[2024-09-23T14:09:35.387+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-23T14:09:35.395+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 008-simple-extract-load-bq.create_table manual__2024-09-23T11:32:25.296554+00:00 [queued]>
+[2024-09-23T14:09:35.398+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 008-simple-extract-load-bq.create_table manual__2024-09-23T11:32:25.296554+00:00 [queued]>
+[2024-09-23T14:09:35.398+0000] {taskinstance.py:2865} INFO - Starting attempt 7 of 7
+[2024-09-23T14:09:35.404+0000] {taskinstance.py:2888} INFO - Executing <Task(BigQueryCreateEmptyTableOperator): create_table> on 2024-09-23 11:32:25.296554+00:00
+[2024-09-23T14:09:35.408+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1560) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-23T14:09:35.409+0000] {standard_task_runner.py:72} INFO - Started process 1562 to run task
+[2024-09-23T14:09:35.410+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '008-simple-extract-load-bq', 'create_table', 'manual__2024-09-23T11:32:25.296554+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/008-simple-extract-load-bq.py', '--cfg-path', '/tmp/tmp86fpd8hz']
+[2024-09-23T14:09:35.410+0000] {standard_task_runner.py:105} INFO - Job 87: Subtask create_table
+[2024-09-23T14:09:35.433+0000] {task_command.py:467} INFO - Running <TaskInstance: 008-simple-extract-load-bq.create_table manual__2024-09-23T11:32:25.296554+00:00 [running]> on host 49bf9bae52f3
+[2024-09-23T14:09:35.468+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='008-simple-extract-load-bq' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-09-23T11:32:25.296554+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-23T11:32:25.296554+00:00'
+[2024-09-23T14:09:35.469+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-23T14:09:35.469+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-23T14:09:35.469+0000] {logging_mixin.py:190} INFO - Current task name:create_table state:running start_date:2024-09-23 14:09:35.395411+00:00
+[2024-09-23T14:09:35.469+0000] {logging_mixin.py:190} INFO - Dag name:008-simple-extract-load-bq and current dag run status:running
+[2024-09-23T14:09:35.469+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-23T14:09:35.478+0000] {base.py:84} INFO - Retrieving connection 'bigquery'
+[2024-09-23T14:09:35.478+0000] {bigquery.py:1635} INFO - Creating table
+[2024-09-23T14:09:35.945+0000] {bigquery.py:1663} INFO - Table astronomer.forestfires already exists.
+[2024-09-23T14:09:35.967+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-23T14:09:35.968+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=008-simple-extract-load-bq, task_id=create_table, run_id=manual__2024-09-23T11:32:25.296554+00:00, execution_date=20240923T113225, start_date=20240923T140935, end_date=20240923T140935
+[2024-09-23T14:09:35.976+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-23T14:09:35.976+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-23T14:09:35.976+0000] {logging_mixin.py:190} INFO - Dag name:008-simple-extract-load-bq queued_at:2024-09-23 14:09:30.847616+00:00
+[2024-09-23T14:09:35.976+0000] {logging_mixin.py:190} INFO - Task hostname:49bf9bae52f3 operator:BigQueryCreateEmptyTableOperator
+[2024-09-23T14:09:36.017+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-23T14:09:36.043+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-23T14:09:36.044+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

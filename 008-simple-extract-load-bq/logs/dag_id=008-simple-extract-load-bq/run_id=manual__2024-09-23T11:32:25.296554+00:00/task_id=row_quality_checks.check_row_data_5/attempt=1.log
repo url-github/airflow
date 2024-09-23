@@ -1,0 +1,231 @@
+[2024-09-23T11:51:35.908+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-23T11:51:35.985+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 008-simple-extract-load-bq.row_quality_checks.check_row_data_5 manual__2024-09-23T11:32:25.296554+00:00 [queued]>
+[2024-09-23T11:51:36.029+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 008-simple-extract-load-bq.row_quality_checks.check_row_data_5 manual__2024-09-23T11:32:25.296554+00:00 [queued]>
+[2024-09-23T11:51:36.032+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-23T11:51:36.077+0000] {taskinstance.py:2888} INFO - Executing <Task(BigQueryCheckOperator): row_quality_checks.check_row_data_5> on 2024-09-23 11:32:25.296554+00:00
+[2024-09-23T11:51:36.089+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=386) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-23T11:51:36.094+0000] {standard_task_runner.py:72} INFO - Started process 425 to run task
+[2024-09-23T11:51:36.102+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '008-simple-extract-load-bq', 'row_quality_checks.check_row_data_5', 'manual__2024-09-23T11:32:25.296554+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/008-simple-extract-load-bq.py', '--cfg-path', '/tmp/tmpgy23ro5y']
+[2024-09-23T11:51:36.109+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask row_quality_checks.check_row_data_5
+[2024-09-23T11:51:36.306+0000] {task_command.py:467} INFO - Running <TaskInstance: 008-simple-extract-load-bq.row_quality_checks.check_row_data_5 manual__2024-09-23T11:32:25.296554+00:00 [running]> on host 49bf9bae52f3
+[2024-09-23T11:51:36.611+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='008-simple-extract-load-bq' AIRFLOW_CTX_TASK_ID='row_quality_checks.check_row_data_5' AIRFLOW_CTX_EXECUTION_DATE='2024-09-23T11:32:25.296554+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-23T11:32:25.296554+00:00'
+[2024-09-23T11:51:36.617+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-23T11:51:36.619+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-23T11:51:36.619+0000] {logging_mixin.py:190} INFO - Current task name:row_quality_checks.check_row_data_5 state:running start_date:2024-09-23 11:51:36.002468+00:00
+[2024-09-23T11:51:36.623+0000] {logging_mixin.py:190} INFO - Dag name:008-simple-extract-load-bq and current dag run status:running
+[2024-09-23T11:51:36.624+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-23T11:51:36.624+0000] {baseoperator.py:405} WARNING - BigQueryCheckOperator.execute cannot be called outside TaskInstance!
+[2024-09-23T11:51:36.624+0000] {sql.py:784} INFO - Executing SQL check: 
+SELECT
+    COUNT(*) AS valid_rows  -- Liczba wierszy, które pasują do warunków.
+FROM
+    `third-essence-345723.astronomer.forestfires`  -- Odwołanie do tabeli w BigQuery przy użyciu zmiennej globalnej i parametrów.
+WHERE
+    ffmc = @ffmc AND  -- Sprawdzenie wartości ffmc.
+    dmc = @dmc AND    -- Sprawdzenie wartości dmc.
+    dc = @dc AND      -- Sprawdzenie wartości dc.
+    isi = @isi AND    -- Sprawdzenie wartości isi.
+    temp = @temp AND  -- Sprawdzenie wartości temperatury.
+    rh = @rh AND      -- Sprawdzenie wartości wilgotności.
+    wind = @wind AND  -- Sprawdzenie wartości wiatru.
+    rain = @rain AND  -- Sprawdzenie wartości deszczu.
+    area = @area      -- Sprawdzenie wartości obszaru.
+[2024-09-23T11:51:36.641+0000] {base.py:84} INFO - Retrieving connection 'bigquery'
+[2024-09-23T11:51:36.786+0000] {sql.py:509} INFO - Running statement: 
+SELECT
+    COUNT(*) AS valid_rows  -- Liczba wierszy, które pasują do warunków.
+FROM
+    `third-essence-345723.astronomer.forestfires`  -- Odwołanie do tabeli w BigQuery przy użyciu zmiennej globalnej i parametrów.
+WHERE
+    ffmc = @ffmc AND  -- Sprawdzenie wartości ffmc.
+    dmc = @dmc AND    -- Sprawdzenie wartości dmc.
+    dc = @dc AND      -- Sprawdzenie wartości dc.
+    isi = @isi AND    -- Sprawdzenie wartości isi.
+    temp = @temp AND  -- Sprawdzenie wartości temperatury.
+    rh = @rh AND      -- Sprawdzenie wartości wilgotności.
+    wind = @wind AND  -- Sprawdzenie wartości wiatru.
+    rain = @rain AND  -- Sprawdzenie wartości deszczu.
+    area = @area      -- Sprawdzenie wartości obszaru., parameters: None
+[2024-09-23T11:51:36.793+0000] {bigquery.py:1702} INFO - Inserting job ***_1727092296792859_db7d66b2a1dacde7de8dd4ac6861f1ce
+[2024-09-23T11:51:37.289+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 292, in execute
+    super().execute(context=context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 785, in execute
+    records = self.get_db_hook().get_first(self.sql, self.parameters)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 332, in get_first
+    return self.run(sql=sql, parameters=parameters, handler=fetch_one_handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 456, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 514, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2924, in execute
+    job = self._run_query(sql)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 3078, in _run_query
+    job = self.hook.insert_job(configuration=configuration, project_id=self.project_id, location=location)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/common/hooks/base_google.py", line 559, in inner_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1708, in insert_job
+    job_api_repr.result(timeout=timeout, retry=retry)
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/bigquery/job/query.py", line 1590, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/bigquery/job/query.py", line 1579, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]; reason: invalidQuery, location: query, message: Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]
+
+Location: US
+Job ID: airflow_1727092296792859_db7d66b2a1dacde7de8dd4ac6861f1ce
+
+[2024-09-23T11:51:37.318+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-09-23T11:51:37.318+0000] {logging_mixin.py:190} INFO - Task start:2024-09-23 11:51:36.002468+00:00 end:2024-09-23 11:51:37.317416+00:00 duration:1.314948
+[2024-09-23T11:51:37.319+0000] {logging_mixin.py:190} INFO - Task:<Task(BigQueryCheckOperator): row_quality_checks.check_row_data_5> dag:<DAG: 008-simple-extract-load-bq> dagrun:<DagRun 008-simple-extract-load-bq @ 2024-09-23 11:32:25.296554+00:00: manual__2024-09-23T11:32:25.296554+00:00, state:running, queued_at: 2024-09-23 11:51:13.666450+00:00. externally triggered: True>
+[2024-09-23T11:51:37.320+0000] {logging_mixin.py:190} INFO - Failure caused by 400 Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]; reason: invalidQuery, location: query, message: Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]
+
+Location: US
+Job ID: ***_1727092296792859_db7d66b2a1dacde7de8dd4ac6861f1ce
+[2024-09-23T11:51:37.321+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=008-simple-extract-load-bq, task_id=row_quality_checks.check_row_data_5, run_id=manual__2024-09-23T11:32:25.296554+00:00, execution_date=20240923T113225, start_date=20240923T115136, end_date=20240923T115137
+[2024-09-23T11:51:37.338+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-23T11:51:37.341+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 22 for task row_quality_checks.check_row_data_5 (400 Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]; reason: invalidQuery, location: query, message: Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]
+
+Location: US
+Job ID: airflow_1727092296792859_db7d66b2a1dacde7de8dd4ac6861f1ce
+; 425)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 292, in execute
+    super().execute(context=context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 785, in execute
+    records = self.get_db_hook().get_first(self.sql, self.parameters)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 332, in get_first
+    return self.run(sql=sql, parameters=parameters, handler=fetch_one_handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 456, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 514, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2924, in execute
+    job = self._run_query(sql)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 3078, in _run_query
+    job = self.hook.insert_job(configuration=configuration, project_id=self.project_id, location=location)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/common/hooks/base_google.py", line 559, in inner_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1708, in insert_job
+    job_api_repr.result(timeout=timeout, retry=retry)
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/bigquery/job/query.py", line 1590, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/bigquery/job/query.py", line 1579, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]; reason: invalidQuery, location: query, message: Encountered " "=" "= "" at line 7, column 10.
+Was expecting:
+    <EOF>
+[Try using standard SQL (https://cloud.google.com/bigquery/docs/reference/standard-sql/enabling-standard-sql)]
+
+Location: US
+Job ID: airflow_1727092296792859_db7d66b2a1dacde7de8dd4ac6861f1ce
+
+[2024-09-23T11:51:37.373+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-23T11:51:37.430+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-23T11:51:37.433+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
