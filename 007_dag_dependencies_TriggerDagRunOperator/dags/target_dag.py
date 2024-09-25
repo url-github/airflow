@@ -21,7 +21,7 @@ with DAG('target_dag',
 
     storing = BashOperator(
         task_id='storing',
-        bash_command='sleep 200'
+        bash_command='sleep 210'
     )
 
     cleaning = PythonOperator(
