@@ -167,4 +167,4 @@ google-cloud-sdk
 .DS_Store
 service_account.json
 configuration.yml
-# pipeline.conf
+pipeline.conf
