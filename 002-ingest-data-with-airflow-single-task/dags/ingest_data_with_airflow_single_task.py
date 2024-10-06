@@ -32,7 +32,7 @@ def ingest_data_with_airflow_single_task():
                       },
                   }
                 ],
-                # Edycja pliku .env kluczem pobranym z IAM AWS.
+                # Edycja pliku .env z kluczem pobranym z IAM AWS.
                 "credentials": {
                     "aws_access_key_id": ab.get_secret("AWS_ACCESS_KEY_ID"),
                     "aws_secret_access_key": ab.get_secret("AWS_SECRET_ACCESS_KEY")
