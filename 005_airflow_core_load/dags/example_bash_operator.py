@@ -1,3 +1,4 @@
+# to dyrektywa, która włącza nową funkcjonalność dla typów adnotacji. Umożliwia to opóźnione rozwiązywanie typów, co oznacza, że można używać typów adnotacji jako ciągów znaków, co poprawia czytelność kodu i unika problemów z cyklicznymi zależnościami.
 from __future__ import annotations
 import datetime
 import pendulum
@@ -5,6 +6,7 @@ import pendulum
 from airflow.models.dag import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
+from airflow.utils.trigger_rule import TriggerRule
 
 with DAG(
     dag_id="example_bash_operator",
@@ -19,6 +21,7 @@ with DAG(
 
     run_this_last = EmptyOperator(
         task_id="run_this_last",
+        trigger_rule=TriggerRule.ALL_DONE,
     )
 
     run_after_loop = BashOperator(
@@ -28,6 +31,7 @@ with DAG(
 
     run_after_loop >> run_this_last
 
+	# {{ task_instance_key_str }} to specjalna zmienna, która jest używana w kontekście szablonów Jinja.
     for i in range(3):
         runme = BashOperator(
             task_id=f"runme_{i}",
@@ -44,9 +48,10 @@ with DAG(
     also_run_this >> run_this_last
 
 this_will_skip = BashOperator(
-    task_id="this_will_skip",
-    bash_command='echo "hello world"; exit 1;', # Airflow potraktuje ten task jako nieudany (failed), ponieważ kod wyjścia nie jest równy 0.
-    dag=dag,
+	task_id="this_will_skip",
+	bash_command='echo "hello world"; exit 1;', # Airflow potraktuje ten task jako nieudany (failed), ponieważ kod wyjścia nie jest równy 0.
+	trigger_rule=TriggerRule.ALL_DONE,
+	dag=dag,
 )
 
 this_will_skip >> run_this_last
