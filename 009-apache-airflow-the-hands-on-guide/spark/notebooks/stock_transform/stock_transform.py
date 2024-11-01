@@ -33,7 +33,7 @@ if __name__ == '__main__':
             .config("fs.s3a.connection.timeout", "10000") \
             .getOrCreate()
 
-        # Read a JSON file from an MinIO bucket using the access key, secret key, 
+        # Read a JSON file from an MinIO bucket using the access key, secret key,
         # and endpoint configured above
         df = spark.read.option("header", "false") \
             .json(f"s3a://{os.getenv('SPARK_APPLICATION_ARGS')}/prices.json")
