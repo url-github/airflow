@@ -4,26 +4,27 @@ from datetime import datetime
 
 def _task_a():
     print('Task A')
-    return 1
+    return 13
 
 @dag(
     start_date=datetime(2024, 1, 1),
     schedule_interval='@daily',
-    catchup=False
+    catchup=False,
+    tags=["taskflow_decorators_mix", "Mix (PythonOperator i TaskFlow API)"]
 )
 def taskflow_decorators_mix():
 
     task_a = PythonOperator(
         task_id='task_a',
         python_callable=_task_a
-	)
+    )
 
     @task
-    def task_b():
+    def task_b(value):
         print('Task B')
-        print()
+        print(f'Value from Task A: {value}')
 
-    # task_b(task_a.output) # new method
-    task_a >> task_b() # old method
+    result = task_a.output  # Pobieranie wyniku task_a przez XCom
+    task_b(result)
 
 taskflow_decorators_mix()

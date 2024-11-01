@@ -26,11 +26,6 @@ def stock_market():
         condition = response.json()['finance']['result'] is None
         return PokeReturnValue(is_done=condition, xcom_value=url)
 
-
-    """
-    url: https://query1.finance.yahoo.com/v8/finance/chart/
-    symbol: AAPL
-	"""
     get_stock_prices = PythonOperator(
         task_id = 'get_stock_prices',
         python_callable=_get_stock_prices,
@@ -55,7 +50,7 @@ def stock_market():
         xcom_all=False,
         mount_tmp_dir=False,
         environment={
-            'SPARK_APPLICATION_ARGS': '{{task_instance.xcom_pull(task_ids="store_prices")}}'
+            'SPARK_APPLICATION_ARGS': '{{task_instance.xcom_pull(task_ids="store_prices")}}' # stock-market/AAPL
 		}
 	)
 

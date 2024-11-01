@@ -4,7 +4,7 @@ from datetime import datetime
 
 def _task_a():
 	print('Task A')
-	return 1
+	return 13
 
 def _task_b(ti=None):
 	print('Task B')
@@ -15,6 +15,7 @@ with DAG(
 	start_date=datetime(2024, 1, 1),
 	schedule_interval='@daily',
 	catchup=False,
+	tags=["taskflow_classic", "PythonOperator (old method)"]
 ):
 	task_a = PythonOperator(
 		task_id='task_a',

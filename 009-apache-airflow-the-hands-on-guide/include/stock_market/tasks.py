@@ -4,11 +4,6 @@ from io import BytesIO
 import requests
 import json
 
-
-"""
-url: https://query1.finance.yahoo.com/v8/finance/chart/
-symbol: AAPL
-"""
 def _get_stock_prices(url, symbol):
 	url = f"{url}{symbol}?metrics=high?&interval=1d&range=1y"
 	api = BaseHook.get_connection('stock_api')
@@ -28,10 +23,11 @@ def _store_prices(stock):
 	if not client.bucket_exists(bucket_name):
 		client.make_bucket(bucket_name)
 
-	stock = json.loads(stock)
+	stock = json.loads(stock) # zamienia string w formacie JSON na strukturę danych Pythona
 
 	symbol = stock['meta']['symbol']
-	data = json.dumps(stock, ensure_ascii=False).encode('utf8')
+
+	data = json.dumps(stock, ensure_ascii=False).encode('utf8') # zamienia obiekt Pythona string w formacie JSON
 	objw = client.put_object(
 		bucket_name=bucket_name,
 		object_name=f'{symbol}/prices.json',
@@ -39,9 +35,4 @@ def _store_prices(stock):
 		length=len(data)
 	)
 
-	return f'{objw.bucket_name}/{symbol}'
-
-
-
-
-
+	return f'{objw.bucket_name}/{symbol}' # stock-market/AAPL
